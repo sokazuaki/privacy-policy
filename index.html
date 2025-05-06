@@ -1,292 +1,316 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>プライバシーポリシー</title>
-  <style>
-    :root {
-      --primary: #3a86ff;
-      --secondary: #4361ee;
-      --accent: #3a0ca3;
-      --background: #f8f9fa;
-      --text: #212529;
-      --light-text: #6c757d;
-      --border: #dee2e6;
-    }
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    body {
-      background-color: var(--background);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem;
-      background-color: white;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-      border-radius: 12px;
-    }
-    
-    header {
-      text-align: center;
-      margin-bottom: 3rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid var(--border);
-      position: relative;
-    }
-    
-    .logo {
-      width: 80px;
-      height: 80px;
-      background-color: var(--primary);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 1.5rem;
-      color: white;
-      font-size: 2rem;
-      font-weight: bold;
-    }
-    
-    h1 {
-      font-size: 2.5rem;
-      color: var(--accent);
-      margin-bottom: 0.5rem;
-    }
-    
-    .updated {
-      color: var(--light-text);
-      font-size: 0.9rem;
-      margin-bottom: 0.5rem;
-    }
-    
-    .language-toggle {
-      display: flex;
-      justify-content: center;
-      margin-top: 1rem;
-    }
-    
-    .language-btn {
-      background: none;
-      border: 1px solid var(--border);
-      padding: 0.25rem 0.75rem;
-      margin: 0 0.25rem;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: all 0.2s;
-      font-size: 0.8rem;
-    }
-    
-    .language-btn.active {
-      background-color: var(--primary);
-      color: white;
-      border-color: var(--primary);
-    }
-    
-    .section {
-      margin-bottom: 2.5rem;
-      animation: fadeIn 0.5s ease-in-out;
-    }
-    
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    
-    h2 {
-      font-size: 1.5rem;
-      color: var(--secondary);
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid var(--border);
-      display: flex;
-      align-items: center;
-    }
-    
-    h2::before {
-      content: "";
-      display: inline-block;
-      width: 8px;
-      height: 24px;
-      background-color: var(--primary);
-      margin-right: 0.75rem;
-      border-radius: 4px;
-    }
-    
-    p {
-      margin-bottom: 1rem;
-      line-height: 1.7;
-    }
-    
-    ul {
-      padding-left: 1.5rem;
-      margin-bottom: 1rem;
-    }
-    
-    li {
-      margin-bottom: 0.5rem;
-    }
-    
-    .highlight {
-      background-color: rgba(58, 134, 255, 0.1);
-      padding: 1rem;
-      border-radius: 8px;
-      border-left: 4px solid var(--primary);
-      margin-bottom: 1rem;
-    }
-    
-    .contact {
-      background-color: #f8f9fa;
-      padding: 1.5rem;
-      border-radius: 8px;
-      text-align: center;
-    }
-    
-    .contact a {
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: bold;
-    }
-    
-    .contact a:hover {
-      text-decoration: underline;
-    }
-    
-    footer {
-      text-align: center;
-      margin-top: 2rem;
-      color: var(--light-text);
-      font-size: 0.8rem;
-    }
-    
-    @media (max-width: 768px) {
-      .container {
-        padding: 1.5rem 1rem;
-        margin: 1rem;
-      }
-      
-      h1 {
-        font-size: 2rem;
-      }
-      
-      h2 {
-        font-size: 1.25rem;
-      }
-    }
-    
-    .icon {
-      margin-right: 0.5rem;
-      color: var(--primary);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宋和明 - 個人ページ</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+        
+        :root {
+            --primary: #1e7c4a;
+            --primary-light: #e6f4ee;
+            --text: #333;
+            --text-light: #666;
+            --background: #f8f8f8;
+            --white: #fff;
+            --border: #eee;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            color: var(--text);
+            background-color: var(--background);
+            line-height: 1.6;
+            font-size: 16px;
+            font-weight: 300;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--white);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: skewX(-15deg) translateX(50%);
+        }
+        
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 30px;
+            background-color: var(--white);
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+        
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .header-info h1 {
+            margin: 0 0 5px 0;
+            font-size: 28px;
+            font-weight: 500;
+        }
+        
+        .header-info p {
+            margin: 5px 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h2 {
+            color: var(--primary);
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section h2::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 20px;
+            background-color: var(--primary);
+            margin-right: 10px;
+            border-radius: 3px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .card {
+            background-color: var(--white);
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: var(--primary);
+            font-weight: 500;
+        }
+        
+        .date {
+            font-size: 12px;
+            color: var(--text-light);
+            margin-bottom: 10px;
+        }
+        
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        
+        .tag {
+            background-color: var(--primary-light);
+            color: var(--primary);
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+        
+        .contact-item i {
+            margin-right: 8px;
+            color: var(--primary);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--primary-light);
+            color: var(--primary);
+            font-size: 12px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="logo">P</div>
-      <h1>プライバシーポリシー</h1>
-      <p class="updated"><strong>最終更新日:</strong> 2025年4月11日</p>
-      <div class="language-toggle">
-        <button class="language-btn active">日本語</button>
-        <button class="language-btn">English</button>
-      </div>
-    </header>
-    
-    <div class="section">
-      <h2>1. はじめに</h2>
-      <p>
-        このプライバシーポリシーは、[あなたのGPTS名]（以下「本アプリ」）が、ユーザーのGoogleカレンダーから取得するすべての予定情報の取り扱いについて説明するものです。本アプリは、ユーザーのプライバシー保護に努め、個人情報の安全な管理を最優先に考えています。
-      </p>
+    <div class="container">
+        <header>
+            <div class="profile-image">
+                <img src="/api/placeholder/100/100" alt="宋和明" />
+            </div>
+            <div class="header-info">
+                <h1>宋 和明</h1>
+                <p>早稲田大学 会計学科 | 北京大学 国際関係学科</p>
+                <p>日本国籍 | 20歳</p>
+            </div>
+        </header>
+        
+        <div class="content">
+            <div class="section">
+                <h2>プロフィール</h2>
+                <p>早稲田大学会計学科在籍中、現在北京大学に交換留学中です。日中両国での学びと実務経験を活かし、グローバルな視点と高い語学力を持っています。会計・国際関係・AI技術に強い関心があります。</p>
+            </div>
+            
+            <div class="section">
+                <h2>学歴</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>早稲田大学</h3>
+                        <div class="date">2023年 - 2027年（予定）</div>
+                        <p>会計学科</p>
+                        <div class="tags">
+                            <span class="tag">英語演説大会入賞</span>
+                            <span class="tag">学生会活動</span>
+                            <span class="tag">成績優秀</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>北京大学</h3>
+                        <div class="date">2024年9月 - 2025年7月</div>
+                        <p>国際関係学科（交換留学）</p>
+                        <div class="tags">
+                            <span class="tag">AI創新会</span>
+                            <span class="tag">翻訳社団</span>
+                            <span class="tag">日本人留学生会</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>職歴・インターン</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>華泰証券</h3>
+                        <div class="date">2024年10月 - 2025年1月</div>
+                        <p>日本テクノロジー株式の調査分析</p>
+                    </div>
+                    <div class="card">
+                        <h3>株式会社dot.and</h3>
+                        <div class="date">2024年6月 - 2024年8月</div>
+                        <p>日本の大学生の海外留学支援</p>
+                    </div>
+                    <div class="card">
+                        <h3>サイゼリヤ</h3>
+                        <div class="date">2023年8月 - 2024年8月</div>
+                        <p>店舗スタッフ・現場通訳</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>スキル・強み</h2>
+                <div class="tags" style="margin-bottom: 20px;">
+                    <span class="tag">日本語（ネイティブ）</span>
+                    <span class="tag">中国語（HSK6級）</span>
+                    <span class="tag">英語（TOEIC850）</span>
+                    <span class="tag">簿記二級</span>
+                    <span class="tag">会計知識</span>
+                    <span class="tag">AI技術</span>
+                    <span class="tag">国際関係学</span>
+                    <span class="tag">チームマネジメント</span>
+                    <span class="tag">異文化コミュニケーション</span>
+                </div>
+                <p>・トリリンガルとしての優れたコミュニケーション能力<br>
+                ・チームリーダーとしての経験と協調性<br>
+                ・ChatGPT、豆包などの生成型AI技術への深い理解と関心</p>
+            </div>
+            
+            <div class="section">
+                <h2>趣味・資格</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>趣味</h3>
+                        <p>テニス、水泳、登山</p>
+                    </div>
+                    <div class="card">
+                        <h3>資格</h3>
+                        <div class="tags">
+                            <span class="tag">簿記二級</span>
+                            <span class="tag">TOEIC 850点</span>
+                            <span class="tag">HSK 6級</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>連絡先</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i>📱</i> <span>13843120926</span>
+                    </div>
+                    <div class="contact-item">
+                        <i>✉️</i> <span>sokazuaki.jh@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i>💬</i> <span>WeChat: DBJmiyako</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 宋和明 | 最終更新日: 2025年5月6日</p>
+        </footer>
     </div>
-    
-    <div class="section">
-      <h2>2. 収集する情報</h2>
-      <p>本アプリは、以下の情報をユーザーのGoogleカレンダーから取得します。</p>
-      <ul>
-        <li>イベントの件名（summary）</li>
-        <li>イベント日時（開始時刻、終了時刻、日付）</li>
-        <li>説明（description）</li>
-        <li>場所（location）</li>
-        <li>その他、該当する予定情報</li>
-      </ul>
-    </div>
-    
-    <div class="section">
-      <h2>3. 利用目的</h2>
-      <p>取得した予定情報は、以下の目的で使用されます。</p>
-      <ul>
-        <li>ユーザーの質問（例：「明日の予定は？」）に対する回答の生成</li>
-        <li>本アプリの機能提供のための一時的な処理</li>
-      </ul>
-    </div>
-    
-    <div class="section">
-      <h2>4. データの保存と利用方法</h2>
-      <div class="highlight">
-        <p><strong>一時キャッシュのみで使用:</strong> 取得した情報は、回答生成のために一時的にキャッシュとして利用され、処理が完了次第速やかに削除されます。</p>
-        <p><strong>暗号化:</strong> 一時キャッシュされたデータは、適切な暗号化技術を用いて保護されています。これにより、不正アクセスや第三者による情報漏洩のリスクを低減します。</p>
-      </div>
-    </div>
-    
-    <div class="section">
-      <h2>5. 情報の共有</h2>
-      <p>
-        本アプリは、取得した予定情報を第三者に提供または共有することは一切ありません。情報は、あくまで回答生成のための一時的な利用に限定されます。
-      </p>
-    </div>
-    
-    <div class="section">
-      <h2>6. ユーザーの権利</h2>
-      <p>
-        ユーザーは、Googleカレンダー上の自身の予定情報を自ら管理する権利を有しています。本アプリによる一時的な情報利用についても、ユーザーはGoogleカレンダーの設定を通じて、自身の情報を確認・修正・削除することができます。
-      </p>
-    </div>
-    
-    <div class="section">
-      <h2>7. プライバシーポリシーの変更</h2>
-      <p>
-        本プライバシーポリシーは、法律の改正や本アプリの運用変更に伴い、適宜改訂される場合があります。改訂が行われた場合には、本アプリ内または公式サイトにて通知いたします。
-      </p>
-    </div>
-    
-    <div class="section">
-      <h2>8. お問い合わせ</h2>
-      <div class="contact">
-        <p>
-          本プライバシーポリシーに関するご質問やご不明点は、以下の連絡先までお問い合わせください。
-        </p>
-        <p>
-          <a href="mailto:[Your Contact Email]">[Your Contact Email]</a>
-        </p>
-      </div>
-    </div>
-    
-    <footer>
-      <p>&copy; 2025 [あなたのGPTS名]. All Rights Reserved.</p>
-    </footer>
-  </div>
-
-  <script>
-    // 言語切り替えボタンの機能
-    const langButtons = document.querySelectorAll('.language-btn');
-    langButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        langButtons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        // 実際の言語切り替え機能はここに実装
-      });
-    });
-  </script>
 </body>
 </html>
